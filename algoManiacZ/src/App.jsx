@@ -8,9 +8,9 @@ function App() {
 
   return (
     <>
-      <p>
-          Welcome to AlgoManiacZ!
-      </p>
+ <h1 className="text-3xl font-bold underline">
+ Welcome to AlgoManiacZ!
+  </h1>         
     </>
   )
 }

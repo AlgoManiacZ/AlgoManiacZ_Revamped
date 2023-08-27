@@ -11,7 +11,7 @@ function App() {
     <>
  <h1 className="text-3xl font-bold underline">
   <Navbar />
- Welcome to AlgoManiacZ!
+ Welcome to AlgoManiacZ Club
   </h1>         
     </>
   )

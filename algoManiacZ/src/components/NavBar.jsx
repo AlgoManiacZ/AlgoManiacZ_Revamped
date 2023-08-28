@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import logo from "../assets/logo.jpeg"
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -10,9 +10,7 @@ function Navbar() {
   return (
     <nav className="bg-gray-900 text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <a href="/" className="text-2xl font-semibold">
-          AlgoManiacZ
-        </a>
+          <img src={logo} alt="" className="w-20 rounded-3xl"/>
 
         <div className="lg:hidden">
           <button

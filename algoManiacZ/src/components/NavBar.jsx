@@ -1,16 +1,20 @@
-import React, { useState } from 'react';
-import logo from "../assets/logo.jpeg"
+import { useState } from 'react'
+import logo from '../assets/logo.jpeg'
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
+    setIsOpen(!isOpen)
+  }
 
   return (
-    <nav className="bg-gray-900 text-white p-4">
+    <nav className="h-28 bg-gray-900 w-full sticky  z-10 top-0 text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
-          <img src={logo} alt="" className="w-20 rounded-3xl"/>
+        <img
+          src={logo}
+          alt=""
+          className="w-20  rounded-3xl"
+        />
 
         <div className="lg:hidden">
           <button
@@ -30,6 +34,7 @@ function Navbar() {
                 strokeWidth="2"
                 d="M4 6h16M4 12h16m-7 6h7"
               ></path>
+              assNam{' '}
             </svg>
           </button>
         </div>
@@ -76,7 +81,7 @@ function Navbar() {
         </div>
       </div>
     </nav>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar

@@ -1,16 +1,14 @@
-import { useState } from 'react'
-import './App.css'
-import Navbar from './components/NavBar'
-
+// import HeroSection from './components/Hero/HeroSection'
+import Navbar from './components/Navbar/NavBar'
+import SpeakerSection from './components/Speakers/SpeakerSection'
+import Contact from './components/Contact/Contact'
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
- <h1 className="text-3xl font-bold underline">
-  <Navbar />
- Welcome to AlgoManiacZ!
-  </h1>         
+      <Navbar>   </Navbar>
+      {/* <HeroSection></HeroSection> */}
+      <SpeakerSection></SpeakerSection>
+      <Contact></Contact>
     </>
   )
 }

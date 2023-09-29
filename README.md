@@ -19,8 +19,8 @@ Steps to run the project
 
 > git clone https://github.com/AlgoManiacZ/AlgoManiacZ_Revamped.git
 
-Then run `npm install` then
-To start project
+- Then run `npm install` 
+- To start project
 `npm run dev`
 
 

@@ -1,16 +1,17 @@
+/* eslint-disable react/prop-types */
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import cardBackground from '../../assets/cardBackgroundImage.svg'
 
 const Card = ({name,imageUrl,about,linkedin,github}) => {
   return (
-    <div className="max-w-sm rounded-lg overflow-hidden shadow-lg mx-auto my-4 py-4 bg-[#000000]  bg-no-repeat bg-cover bg-center"
+    <div className="max-w-sm rounded-lg overflow-hidden shadow-lg mx-auto my-4 py-4  bg-[#000000]  bg-no-repeat bg-cover bg-center"
 
      style={{
         backgroundImage: `url(${cardBackground})`,
       }}
     
     >
-      <div className="flex items-center justify-center h-40">
+      <div className="flex items-center justify-center h-40 ">
         <img
           className="w-36 h-36 object-cover rounded-full"
           src={imageUrl}

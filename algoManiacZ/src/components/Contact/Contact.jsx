@@ -1,23 +1,27 @@
-import { useState } from 'react'
-import contactBackgroundImage from '../../assets/Connect.svg'
+import { useState } from "react";
+import contactBackgroundImage from "../../assets/Connect.svg";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-  })
+    name: "",
+    email: "",
+    username: "",
+    clgname: "",
+    number: "",
+    id: "",
+  });
 
   const handleChange = (e) => {
-    const { name, value } = e.target
+    const { name, value } = e.target;
     setFormData({
       ...formData,
       [name]: value,
-    })
-  }
+    });
+  };
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-  }
+    e.preventDefault();
+  };
   return (
     <div
       className="md:h-[calc(100vh-112px)] h-auto bg-no-repeat bg-cover bg-center md:bg-left lg:bg-left xl:bg-left text-[#aeadaa]"
@@ -65,10 +69,10 @@ const Contact = () => {
               <div className="mb-6">
                 <input
                   type="text"
-                  id="email"
+                  id="username"
                   placeholder="LeetCode username"
-                  name="email"
-                  value={formData.email}
+                  name="username"
+                  value={formData.username}
                   onChange={handleChange}
                   className="border border-gray-300 rounded-lg px-3 py-2 w-1/2 focus:outline-none focus:ring focus:border-blue-400"
                   required
@@ -78,10 +82,10 @@ const Contact = () => {
               <div className="mb-6">
                 <input
                   type="text"
-                  id="email"
+                  id="clgname"
                   placeholder="College Name"
-                  name="email"
-                  value={formData.email}
+                  name="clgname"
+                  value={formData.clgname}
                   onChange={handleChange}
                   className="border border-gray-300 rounded-lg px-3 py-2 w-1/2 focus:outline-none focus:ring focus:border-blue-400"
                   required
@@ -90,10 +94,10 @@ const Contact = () => {
               <div className="mb-6">
                 <input
                   type="text"
-                  id="email"
+                  id="number"
                   placeholder="Mobile Number"
-                  name="email"
-                  value={formData.email}
+                  name="number"
+                  value={formData.number}
                   onChange={handleChange}
                   className="border border-gray-300 rounded-lg px-3 py-2 w-1/2 focus:outline-none focus:ring focus:border-blue-400"
                   required
@@ -102,10 +106,10 @@ const Contact = () => {
               <div className="mb-6">
                 <input
                   type="text"
-                  id="email"
-                  placeholder=" Discord Id"
-                  name="email"
-                  value={formData.email}
+                  id="id"
+                  placeholder="Discord Id"
+                  name="id"
+                  value={formData.id}
                   onChange={handleChange}
                   className="border border-gray-300 rounded-lg px-3 py-2 w-1/2 focus:outline-none focus:ring focus:border-blue-400"
                   required
@@ -124,7 +128,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

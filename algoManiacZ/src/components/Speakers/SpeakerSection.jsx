@@ -1,9 +1,6 @@
 import Card from './Card'
-import Nisha from '../../assets/Nisha1.jpg'
-import Manish from '../../assets/Manish1.jpg'
-import Ayushi from '../../assets/Ayushi1.jpeg'
+import { Speakers } from '../../utils/SpeakerData'
 const SpeakerSection = () => {
-  // color gradient color for the text
   const gradientTextStyle = {
     background: 'rgb(2, 0, 36)',
     // eslint-disable-next-line no-dupe-keys
@@ -13,36 +10,8 @@ const SpeakerSection = () => {
     backgroundClip: 'text',
     color: 'transparent',
   }
-
-  const Speakers = [
-    {
-      name: 'Nisha',
-      imageUrl: Nisha,
-      about:
-        ' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos illo fugiat illum nam itaque adipisci perferendis deserunt necessitatibus error. Unde fugiat facilis aliquam soluta placeat non ipsum, harum eos quod!',
-      linkedin: '',
-      github: '',
-    },
-    {
-      name: 'Manish',
-      imageUrl: Manish,
-      about:
-        ' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos illo fugiat illum nam itaque adipisci perferendis deserunt necessitatibus error. Unde fugiat facilis aliquam soluta placeat non ipsum, harum eos quod!',
-      linkedin: '',
-      github: '',
-    },
-    {
-      name: 'Ayushi',
-      imageUrl: Ayushi,
-      about:
-        ' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos illo fugiat illum nam itaque adipisci perferendis deserunt necessitatibus error. Unde fugiat facilis aliquam soluta placeat non ipsum, harum eos quod!',
-      linkedin: '',
-      github: '',
-    },
-  ]
-
   return (
-    <div className="lg:h-[calc(100vh-112px)] h-auto  text-[#aeadaa] bg-[#0e0b10] w-full flex flex-col justify-center gap-y-3 pt-10 lg:pt-0">
+    <div className="lg:h-[calc(100vh-112px)] h-auto  text-[#aeadaa] bg-[#0e0b10] w-full flex flex-col justify-center  gap-y-3 pt-10 lg:pt-0">
       <div className="text-center">
         <h1 className="text-4xl font-bold   lg:text-5xl xl:text-8xl">
           Whos Speaking?
@@ -54,7 +23,7 @@ const SpeakerSection = () => {
           Take a look at the Speakers at our channel
         </p>
       </div>
-      <div className="grid grid-cols-1  lg:grid-cols-3 md:grid-cols-2 lg:mt-4  ">
+      <div className="grid grid-cols-1  lg:grid-cols-3 md:grid-cols-2 lg:mt-4  px-4">
         {Speakers.map((speaker) => {
           return (
             <Card

@@ -1,20 +1,16 @@
-import { useState } from 'react'
-import logo from '../../assets/logo.jpeg'
+import { useState } from "react";
+import logo from "../../assets/logo.jpeg";
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
-    setIsOpen(!isOpen)
-  }
+    setIsOpen(!isOpen);
+  };
 
   return (
-    <nav className="h-28 bg-gray-900 w-full sticky  z-10 top-0 text-white p-4">
+    <nav className="h-28 bg-gray-900 w-full sticky z-10 top-0 flex px-5 md:px-20 py-4">
       <div className="container mx-auto flex justify-between items-center">
-        <img
-          src={logo}
-          alt=""
-          className="w-20  rounded-3xl"
-        />
+        <img src={logo} alt="" className="w-16  rounded-full" />
 
         <div className="lg:hidden">
           <button
@@ -22,7 +18,7 @@ function Navbar() {
             className="text-white p-2 focus:outline-none"
           >
             <svg
-              className="w-6 h-6"
+              className="w-8 h-8"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -34,54 +30,62 @@ function Navbar() {
                 strokeWidth="2"
                 d="M4 6h16M4 12h16m-7 6h7"
               ></path>
-              assNam{' '}
+              assNam{" "}
             </svg>
           </button>
         </div>
 
         <div
           className={`${
-            isOpen ? 'block' : 'hidden'
-          } lg:flex lg:items-center lg:w-auto`}
+            isOpen ? "block" : "hidden"
+          }  absolute lg:relative w-full lg:w-auto left-0 top-[120px] lg:top-auto translate-x-1/4 lg:translate-x-0  lg:flex lg:items-center `}
         >
-          <ul className="lg:flex">
-            <li className="mb-2 lg:mb-0 lg:ml-6">
+          <ul className="flex flex-col lg:flex-row w-6/12 lg:w-auto items-center bg-gray-900 rounded-lg">
+            <li className="my-5 lg:m-auto lg:ml-6">
               <a
                 href="#"
-                className="block text-white hover:text-blue-200 font-thin"
+                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold"
               >
-                Home
+                About us
               </a>
             </li>
-            <li className="mb-2 lg:mb-0 lg:ml-6">
+            <li className="my-5 lg:m-auto lg:ml-6">
               <a
                 href="#"
-                className="block text-white hover:text-blue-200 font-thin"
+                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold"
               >
-                About
+                Speakers
               </a>
             </li>
-            <li className="mb-2 lg:mb-0 lg:ml-6">
+            <li className="my-5 lg:m-auto lg:ml-6">
               <a
                 href="#"
-                className="block text-white hover:text-blue-200 font-thin"
+                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold"
               >
-                Services
+                Join us
               </a>
             </li>
-            <li className="mb-2 lg:mb-0 lg:ml-6">
+            <li className="my-5 lg:m-auto lg:ml-6">
               <a
                 href="#"
-                className="block text-white hover:text-blue-200 font-thin"
+                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold"
               >
-                Contact
+                FAQs
+              </a>
+            </li>
+            <li className="my-5 lg:m-auto lg:ml-6">
+              <a
+                href="#"
+                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold py-2 px-5 rounded-3xl  bg-gradient-to-r from-[#83310e] to-[#4d0373]"
+              >
+                Contact Us
               </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

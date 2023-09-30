@@ -64,7 +64,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-col md:flex-row items-center justify-between text-[#aeadaa] mb-6">
           <div className="text-center px-2 md:px-28 my-3">
-            <p className="mb-2">Made with ❤️ by Akshat Chaube</p>
+            <p className="mb-2">Made with ❤️ by AlgoManiacZ Community</p>
           </div>
 
           <div className="text-center px-2 md:px-28 my-3">

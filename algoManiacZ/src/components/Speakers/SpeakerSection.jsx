@@ -23,7 +23,7 @@ const SpeakerSection = () => {
           Take a look at the Speakers at our channel
         </p>
       </div>
-      <div className="grid grid-cols-1  lg:grid-cols-3 md:grid-cols-2 lg:mt-4  px-4">
+      <div className="grid gap-5 grid-cols-1  lg:grid-cols-3 md:grid-cols-2 lg:mt-4  px-4">
         {Speakers.map((speaker) => {
           return (
             <Card

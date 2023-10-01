@@ -11,7 +11,7 @@ const SpeakerSection = () => {
     color: 'transparent',
   }
   return (
-    <div className="lg:h-[calc(100vh-112px)] h-auto  text-[#aeadaa] bg-[#0e0b10] w-full flex flex-col justify-center  gap-y-3 pt-10 lg:pt-0">
+    <div className="lg:h-[calc(100vh-112px)] h-auto  text-[#aeadaa] bg-[#0e0b10] w-full flex flex-col justify-center  gap-y-3 pt-10">
       <div className="text-center">
         <h1 className="text-4xl font-bold   lg:text-5xl xl:text-8xl">
           Whos Speaking?

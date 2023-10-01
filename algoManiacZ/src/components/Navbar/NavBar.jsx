@@ -8,14 +8,54 @@ function Navbar() {
   }
 
   return (
-    <nav className="h-28 bg-gray-900 w-full sticky  z-10 top-0 text-white p-4">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="bg-[#0e0b10] w-full sticky  z-10 top-0 text-white p-4 drop-shadow-[0_20px_20px_rgba(0,0,0,1)]">
+      <div className="container mx-auto max-w-[1400px] flex justify-between items-center">
         <img
           src={logo}
           alt=""
-          className="w-20  rounded-3xl"
+          className="w-12 h-12 rounded-3xl"
         />
 
+        <div
+          className={`${
+            isOpen ? 'block' : 'hidden'
+          } lg:flex lg:items-center lg:w-auto`}
+        >
+          <ul className="lg:flex text-center items-center">
+            <li className="lg:mb-0 lg:ml-6">
+              <a
+                href="#"
+                className="block text-white hover:text-blue-200 font-thin py-2 px-4"
+              >
+                Home
+              </a>
+            </li>
+            <li className="lg:mb-0 lg:ml-6">
+              <a
+                href="#"
+                className="block text-white hover:text-blue-200 font-thin py-2 px-4"
+              >
+                About
+              </a>
+            </li>
+            <li className="lg:mb-0 lg:ml-6">
+              <a
+                href="#"
+                className="block text-white hover:text-blue-200 font-thin py-2 px-4"
+              >
+                Services
+              </a>
+            </li>
+            <li className="lg:mb-0 lg:ml-6">
+              <a
+                href="#"
+                className="block text-white hover:text-blue-200 font-thin py-2 px-4 bg-gradient-to-r from-orange-500 via-red-500 to-purple-500 rounded-full"
+              >
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
         <div className="lg:hidden">
           <button
             onClick={toggleNavbar}
@@ -37,47 +77,6 @@ function Navbar() {
               assNam{' '}
             </svg>
           </button>
-        </div>
-
-        <div
-          className={`${
-            isOpen ? 'block' : 'hidden'
-          } lg:flex lg:items-center lg:w-auto`}
-        >
-          <ul className="lg:flex">
-            <li className="mb-2 lg:mb-0 lg:ml-6">
-              <a
-                href="#"
-                className="block text-white hover:text-blue-200 font-thin"
-              >
-                Home
-              </a>
-            </li>
-            <li className="mb-2 lg:mb-0 lg:ml-6">
-              <a
-                href="#"
-                className="block text-white hover:text-blue-200 font-thin"
-              >
-                About
-              </a>
-            </li>
-            <li className="mb-2 lg:mb-0 lg:ml-6">
-              <a
-                href="#"
-                className="block text-white hover:text-blue-200 font-thin"
-              >
-                Services
-              </a>
-            </li>
-            <li className="mb-2 lg:mb-0 lg:ml-6">
-              <a
-                href="#"
-                className="block text-white hover:text-blue-200 font-thin"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     </nav>

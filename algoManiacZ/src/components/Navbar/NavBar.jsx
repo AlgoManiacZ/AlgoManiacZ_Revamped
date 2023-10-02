@@ -8,7 +8,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="h-28 bg-gray-900 w-full sticky z-10 top-0 flex px-5 md:px-20 py-4">
+    <nav className="h-28 bg-navbarColor w-full sticky z-10 top-0 flex px-5 md:px-20 py-4">
       <div className="container mx-auto flex justify-between items-center">
         <img src={logo} alt="" className="w-16  rounded-full" />
 
@@ -44,7 +44,7 @@ function Navbar() {
             <li className="my-5 lg:m-auto lg:ml-6">
               <a
                 href="#"
-                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold"
+                className="block text-textColor hover:underline underline-offset-4 font-bold"
               >
                 About us
               </a>
@@ -52,7 +52,7 @@ function Navbar() {
             <li className="my-5 lg:m-auto lg:ml-6">
               <a
                 href="#"
-                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold"
+                className="block text-textColor hover:underline underline-offset-4 font-bold"
               >
                 Speakers
               </a>
@@ -60,7 +60,7 @@ function Navbar() {
             <li className="my-5 lg:m-auto lg:ml-6">
               <a
                 href="#"
-                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold"
+                className="block text-textColor hover:underline underline-offset-4 font-bold"
               >
                 Join us
               </a>
@@ -68,7 +68,7 @@ function Navbar() {
             <li className="my-5 lg:m-auto lg:ml-6">
               <a
                 href="#"
-                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold"
+                className="block text-textColor hover:underline underline-offset-4 font-bold"
               >
                 FAQs
               </a>
@@ -76,7 +76,7 @@ function Navbar() {
             <li className="my-5 lg:m-auto lg:ml-6">
               <a
                 href="#"
-                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold py-2 px-5 rounded-3xl  bg-gradient-to-r from-[#83310e] to-[#4d0373]"
+                className="block text-texttext-textColor hover:underline underline-offset-4 font-bold py-2 px-5 rounded-3xl  bg-gradient-to-r from-Navbar to-NavbarPurple"
               >
                 Contact Us
               </a>

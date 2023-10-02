@@ -11,7 +11,13 @@ function Navbar() {
   return (
     <nav className="h-28 bg-gray-900 w-full sticky z-10 top-0 flex px-5 md:px-20 py-4">
       <div className="container mx-auto flex justify-between items-center">
-        <img src={logo} alt="" className="w-16  rounded-full" />
+        <Link to="home" spy={true} smooth={true} offset={-100} duration={100}>
+          <img
+            src={logo}
+            alt=""
+            className="w-16  rounded-full cursor-pointer"
+          />
+        </Link>
 
         <div className="lg:hidden">
           <button

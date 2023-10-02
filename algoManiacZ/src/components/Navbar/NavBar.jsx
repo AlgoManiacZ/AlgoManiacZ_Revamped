@@ -9,7 +9,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="h-28 bg-gray-900 w-full sticky z-10 top-0 flex px-5 md:px-20 py-4">
+    <nav className="h-28 bg-navbarColor w-full sticky z-10 top-0 flex px-5 md:px-20 py-4">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="home" spy={true} smooth={true} offset={-100} duration={100}>
           <img
@@ -55,7 +55,7 @@ function Navbar() {
                 smooth={true}
                 offset={-100}
                 duration={100}
-                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold cursor-pointer"
+                className="block text-textColor hover:underline underline-offset-4 font-bold cursor-pointer"
               >
                 About us
               </Link>
@@ -67,7 +67,7 @@ function Navbar() {
                 smooth={true}
                 offset={-100}
                 duration={100}
-                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold cursor-pointer"
+                className="block text-textColor hover:underline underline-offset-4 font-bold cursor-pointer"
               >
                 Speakers
               </Link>
@@ -79,7 +79,7 @@ function Navbar() {
                 smooth={true}
                 offset={-100}
                 duration={100}
-                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold cursor-pointer"
+                className="block text-textColor hover:underline underline-offset-4 font-bold cursor-pointer"
               >
                 Join us
               </Link>
@@ -91,7 +91,7 @@ function Navbar() {
                 smooth={true}
                 offset={-100}
                 duration={100}
-                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold cursor-pointer"
+                className="block text-textColor hover:underline underline-offset-4 font-bold cursor-pointer"
               >
                 FAQs
               </Link>
@@ -103,7 +103,7 @@ function Navbar() {
                 smooth={true}
                 offset={-100}
                 duration={100}
-                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold cursor-pointer py-2 px-5 rounded-3xl  bg-gradient-to-r from-[#83310e] to-[#4d0373]"
+                className="block text-texttext-textColor hover:underline underline-offset-4 font-bold cursor-pointer py-2 px-5 rounded-3xl  bg-gradient-to-r from-Navbar to-NavbarPurple"
               >
                 Contact Us
               </Link>

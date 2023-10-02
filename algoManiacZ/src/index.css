@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 * {
   margin: 0;
   padding: 0;
@@ -9,4 +9,9 @@
 }
 html {
   scroll-behavior: smooth;
+}
+@layer base {
+  html {
+    font-family: 'Poppins', sans-serif;
+  }
 }

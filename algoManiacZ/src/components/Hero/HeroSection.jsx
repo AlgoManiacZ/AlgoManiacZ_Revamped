@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <div className="about">
       <div
-        className="md:h-[calc(100vh-112px)] bg-no-repeat bg-cover bg-center md:bg-left lg:bg-left xl:bg-left text-[#aeadaa]"
+        className="md:h-[calc(100vh-112px)] bg-no-repeat bg-cover bg-center md:bg-left lg:bg-left xl:bg-left text-textColor"
         style={{
           backgroundImage: `url(${backgroundImage})`,
         }}
@@ -22,7 +22,7 @@ const HeroSection = () => {
 
             <div className="mt-10 md:mt-0 md:ml-10 md:w-1/2 w-full">
               <h1 className="text-4xl font-bold text-center md:text-left lg:text-5xl xl:text-6xl">
-                About <span className="text-[#bf5814]">AlgoManiacZ</span>
+                About <span className="text-heroText">AlgoManiacZ</span>
               </h1>
 
               <p className="mt-6 text-base text-center md:text-left lg:text-xl xl:text-2xl leading-relaxed">

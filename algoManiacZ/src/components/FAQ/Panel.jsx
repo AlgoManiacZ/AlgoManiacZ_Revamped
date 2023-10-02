@@ -4,7 +4,7 @@ import { BiPlus } from 'react-icons/bi'
 const Panel = ({ title, children, isActive, onShow }) => {
   return (
     <div
-      className={`bg-[#803502] ${
+      className={`bg-orange ${
         isActive ? 'h-fit' : 'h-20'
       }  rounded-xl py-4 px-3 duration-200 transition-h ease-in-out flex flex-col justify-center`}
     >

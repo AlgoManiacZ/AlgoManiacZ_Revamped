@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="home">
       <div
-        className="md:h-[calc(100vh-112px)] md:w-[100vw] h-[calc(100vh-112px)] bg-no-repeat bg-cover bg-center md:bg-left lg:bg-left xl:bg-left text-[#aeadaa]"
+        className="md:h-[calc(100vh-112px)] h-[calc(100vh-112px)] bg-no-repeat bg-cover bg-center md:bg-left lg:bg-left xl:bg-left text-textColor"
         style={{
           backgroundImage: `url(${backgroundImage})`,
         }}
@@ -18,10 +18,10 @@ const Home = () => {
               src={AlgoManiacZ}
               alt="algomaniacZ"
             />
-            <h1 className="text-[#B05333] text-3xl font-bold  md:text-4xl lg:text-4xl">
+            <h1 className="text-homeTextOrange text-3xl font-bold  md:text-4xl lg:text-4xl">
               #AlgoManiacZ
             </h1>
-            <button className="bg-[#121414] p-[18px] mt-[20%] md:mt-12 rounded-[20px] w-[90%] md:w-[70%] lg:w-[60%] xl:w-[60%]">
+            <button className="bg-homeBtn p-[18px] mt-[20%] md:mt-12 rounded-[20px] w-[90%] md:w-[70%] lg:w-[60%] xl:w-[60%]">
               <div className="flex items-center justify-center box-border">
                 <img
                   className="w-[28px] h-[28px]"

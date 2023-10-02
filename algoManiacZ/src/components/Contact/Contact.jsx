@@ -62,7 +62,7 @@ const Contact = () => {
 	};
 	return (
 		<div
-			className="md:h-[calc(100vh-112px)] h-auto bg-no-repeat bg-cover bg-center md:bg-left lg:bg-left xl:bg-left text-[#aeadaa]"
+			className="md:h-[calc(100vh-112px)] h-auto bg-no-repeat bg-cover bg-center md:bg-left lg:bg-left xl:bg-left text-textColor"
 			style={{
 				backgroundImage: `url(${contactBackgroundImage})`,
 			}}

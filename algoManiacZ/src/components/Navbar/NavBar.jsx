@@ -1,68 +1,24 @@
-import { useState } from 'react'
-import logo from '../../assets/logo.jpeg'
+import { useState } from "react";
+import logo from "../../assets/logo.jpeg";
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
-    setIsOpen(!isOpen)
-  }
+    setIsOpen(!isOpen);
+  };
 
   return (
-    <nav className="bg-[#0e0b10] w-full sticky  z-10 top-0 text-white p-4 drop-shadow-[0_20px_20px_rgba(0,0,0,1)]">
-      <div className="container mx-auto max-w-[1400px] flex justify-between items-center">
-        <img
-          src={logo}
-          alt=""
-          className="w-12 h-12 rounded-3xl"
-        />
+    <nav className="h-28 bg-gray-900 w-full sticky z-10 top-0 flex px-5 md:px-20 py-4">
+      <div className="container mx-auto flex justify-between items-center">
+        <img src={logo} alt="" className="w-16  rounded-full" />
 
-        <div
-          className={`${
-            isOpen ? 'block' : 'hidden'
-          } lg:flex lg:items-center lg:w-auto`}
-        >
-          <ul className="lg:flex text-center items-center">
-            <li className="lg:mb-0 lg:ml-6">
-              <a
-                href="#"
-                className="block text-white hover:text-blue-200 font-thin py-2 px-4"
-              >
-                Home
-              </a>
-            </li>
-            <li className="lg:mb-0 lg:ml-6">
-              <a
-                href="#"
-                className="block text-white hover:text-blue-200 font-thin py-2 px-4"
-              >
-                About
-              </a>
-            </li>
-            <li className="lg:mb-0 lg:ml-6">
-              <a
-                href="#"
-                className="block text-white hover:text-blue-200 font-thin py-2 px-4"
-              >
-                Services
-              </a>
-            </li>
-            <li className="lg:mb-0 lg:ml-6">
-              <a
-                href="#"
-                className="block text-white hover:text-blue-200 font-thin py-2 px-4 bg-gradient-to-r from-orange-500 via-red-500 to-purple-500 rounded-full"
-              >
-                Contact Us
-              </a>
-            </li>
-          </ul>
-        </div>
         <div className="lg:hidden">
           <button
             onClick={toggleNavbar}
             className="text-white p-2 focus:outline-none"
           >
             <svg
-              className="w-6 h-6"
+              className="w-8 h-8"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -74,13 +30,62 @@ function Navbar() {
                 strokeWidth="2"
                 d="M4 6h16M4 12h16m-7 6h7"
               ></path>
-              assNam{' '}
+              assNam{" "}
             </svg>
           </button>
         </div>
+
+        <div
+          className={`${
+            isOpen ? "block" : "hidden"
+          }  absolute lg:relative w-full lg:w-auto left-0 top-[120px] lg:top-auto translate-x-1/4 lg:translate-x-0  lg:flex lg:items-center `}
+        >
+          <ul className="flex flex-col lg:flex-row w-6/12 lg:w-auto items-center bg-gray-900 rounded-lg">
+            <li className="my-5 lg:m-auto lg:ml-6">
+              <a
+                href="#"
+                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold"
+              >
+                About us
+              </a>
+            </li>
+            <li className="my-5 lg:m-auto lg:ml-6">
+              <a
+                href="#"
+                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold"
+              >
+                Speakers
+              </a>
+            </li>
+            <li className="my-5 lg:m-auto lg:ml-6">
+              <a
+                href="#"
+                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold"
+              >
+                Join us
+              </a>
+            </li>
+            <li className="my-5 lg:m-auto lg:ml-6">
+              <a
+                href="#"
+                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold"
+              >
+                FAQs
+              </a>
+            </li>
+            <li className="my-5 lg:m-auto lg:ml-6">
+              <a
+                href="#"
+                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold py-2 px-5 rounded-3xl  bg-gradient-to-r from-[#83310e] to-[#4d0373]"
+              >
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

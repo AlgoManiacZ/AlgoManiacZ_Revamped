@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 import logo from "../../assets/logo.jpeg";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,44 +43,64 @@ function Navbar() {
         >
           <ul className="flex flex-col lg:flex-row w-6/12 lg:w-auto items-center bg-gray-900 rounded-lg">
             <li className="my-5 lg:m-auto lg:ml-6">
-              <a
-                href="#"
-                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold"
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold cursor-pointer"
               >
                 About us
-              </a>
+              </Link>
             </li>
             <li className="my-5 lg:m-auto lg:ml-6">
-              <a
-                href="#"
-                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold"
+              <Link
+                to="speakers"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold cursor-pointer"
               >
                 Speakers
-              </a>
+              </Link>
             </li>
             <li className="my-5 lg:m-auto lg:ml-6">
-              <a
-                href="#"
-                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold"
+              <Link
+                to="joinus"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold cursor-pointer"
               >
                 Join us
-              </a>
+              </Link>
             </li>
             <li className="my-5 lg:m-auto lg:ml-6">
-              <a
-                href="#"
-                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold"
+              <Link
+                to="faq"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold cursor-pointer"
               >
                 FAQs
-              </a>
+              </Link>
             </li>
             <li className="my-5 lg:m-auto lg:ml-6">
-              <a
-                href="#"
-                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold py-2 px-5 rounded-3xl  bg-gradient-to-r from-[#83310e] to-[#4d0373]"
+              <Link
+                to="contactus"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+                className="block text-[#adaba9] hover:underline underline-offset-4 font-bold cursor-pointer py-2 px-5 rounded-3xl  bg-gradient-to-r from-[#83310e] to-[#4d0373]"
               >
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

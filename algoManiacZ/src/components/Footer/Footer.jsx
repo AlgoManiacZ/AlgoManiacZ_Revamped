@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import {
   BsGoogle,
   BsGithub,
@@ -10,7 +11,7 @@ import { RiArrowUpCircleFill } from "react-icons/ri";
 
 export default function Footer() {
   return (
-    <>
+    <div className="contactus">
       <footer className="py-4 text-white bg-[#0e0b10]">
         <h1 className="text-4xl text-[#aeadaa] text-center font-bold mt-10 mb-6">
           Contact Us
@@ -68,12 +69,21 @@ export default function Footer() {
           </div>
 
           <div className="text-center px-2 md:px-28 my-3">
-            <button className="mb-2 text-[#803502] hover:text-[#b45309] cursor-pointer">
-              <RiArrowUpCircleFill size="2.5rem" />
-            </button>
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={100}
+            >
+              <RiArrowUpCircleFill
+                className="mb-2 text-[#803502] hover:text-[#b45309] cursor-pointer"
+                size="2.5rem"
+              />
+            </Link>
           </div>
         </div>
       </footer>
-    </>
+    </div>
   );
 }

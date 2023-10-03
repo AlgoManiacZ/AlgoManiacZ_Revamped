@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 import logo from "../../assets/logo.jpeg";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,13 @@ function Navbar() {
   return (
     <nav className="h-28 bg-navbarColor w-full sticky z-10 top-0 flex px-5 md:px-20 py-4">
       <div className="container mx-auto flex justify-between items-center">
-        <img src={logo} alt="" className="w-16  rounded-full" />
+        <Link to="home" spy={true} smooth={true} offset={-100} duration={100}>
+          <img
+            src={logo}
+            alt=""
+            className="w-16  rounded-full cursor-pointer"
+          />
+        </Link>
 
         <div className="lg:hidden">
           <button
@@ -42,44 +49,64 @@ function Navbar() {
         >
           <ul className="flex flex-col lg:flex-row w-6/12 lg:w-auto items-center bg-gray-900 rounded-lg">
             <li className="my-5 lg:m-auto lg:ml-6">
-              <a
-                href="#"
-                className="block text-textColor hover:underline underline-offset-4 font-bold"
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+                className="block text-textColor hover:underline underline-offset-4 font-bold cursor-pointer"
               >
                 About us
-              </a>
+              </Link>
             </li>
             <li className="my-5 lg:m-auto lg:ml-6">
-              <a
-                href="#"
-                className="block text-textColor hover:underline underline-offset-4 font-bold"
+              <Link
+                to="speakers"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+                className="block text-textColor hover:underline underline-offset-4 font-bold cursor-pointer"
               >
                 Speakers
-              </a>
+              </Link>
             </li>
             <li className="my-5 lg:m-auto lg:ml-6">
-              <a
-                href="#"
-                className="block text-textColor hover:underline underline-offset-4 font-bold"
+              <Link
+                to="joinus"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+                className="block text-textColor hover:underline underline-offset-4 font-bold cursor-pointer"
               >
                 Join us
-              </a>
+              </Link>
             </li>
             <li className="my-5 lg:m-auto lg:ml-6">
-              <a
-                href="#"
-                className="block text-textColor hover:underline underline-offset-4 font-bold"
+              <Link
+                to="faq"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+                className="block text-textColor hover:underline underline-offset-4 font-bold cursor-pointer"
               >
                 FAQs
-              </a>
+              </Link>
             </li>
             <li className="my-5 lg:m-auto lg:ml-6">
-              <a
-                href="#"
-                className="block text-texttext-textColor hover:underline underline-offset-4 font-bold py-2 px-5 rounded-3xl  bg-gradient-to-r from-Navbar to-NavbarPurple"
+              <Link
+                to="contactus"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+                className="block text-texttext-textColor hover:underline underline-offset-4 font-bold cursor-pointer py-2 px-5 rounded-3xl  bg-gradient-to-r from-Navbar to-NavbarPurple"
               >
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

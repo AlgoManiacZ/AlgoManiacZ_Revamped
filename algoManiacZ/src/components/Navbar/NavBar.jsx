@@ -1,17 +1,23 @@
-import { useState } from "react";
-import { Link } from "react-scroll";
-import logo from "../../assets/logo.jpeg";
+import { useState } from 'react'
+import { Link } from 'react-scroll'
+import logo from '../../assets/logo.jpeg'
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
+    setIsOpen(!isOpen)
+  }
 
   return (
     <nav className="h-28 bg-navbarColor w-full sticky z-10 top-0 flex px-5 md:px-20 py-4">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="home" spy={true} smooth={true} offset={-100} duration={100}>
+        <Link
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={100}
+        >
           <img
             src={logo}
             alt=""
@@ -22,7 +28,7 @@ function Navbar() {
         <div className="lg:hidden">
           <button
             onClick={toggleNavbar}
-            className="text-white p-2 focus:outline-none"
+            className="text-textColor  p-2 focus:outline-none z-30"
           >
             <svg
               className="w-8 h-8"
@@ -37,14 +43,14 @@ function Navbar() {
                 strokeWidth="2"
                 d="M4 6h16M4 12h16m-7 6h7"
               ></path>
-              assNam{" "}
+              assNam{' '}
             </svg>
           </button>
         </div>
 
         <div
           className={`${
-            isOpen ? "block" : "hidden"
+            isOpen ? 'block' : 'hidden'
           }  absolute lg:relative w-full lg:w-auto left-0 top-[120px] lg:top-auto translate-x-1/4 lg:translate-x-0  lg:flex lg:items-center `}
         >
           <ul className="flex flex-col lg:flex-row w-6/12 lg:w-auto items-center bg-gray-900 rounded-lg">
@@ -72,18 +78,7 @@ function Navbar() {
                 Speakers
               </Link>
             </li>
-            <li className="my-5 lg:m-auto lg:ml-6">
-              <Link
-                to="joinus"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={100}
-                className="block text-textColor hover:underline underline-offset-4 font-bold cursor-pointer"
-              >
-                Join us
-              </Link>
-            </li>
+
             <li className="my-5 lg:m-auto lg:ml-6">
               <Link
                 to="faq"
@@ -94,6 +89,18 @@ function Navbar() {
                 className="block text-textColor hover:underline underline-offset-4 font-bold cursor-pointer"
               >
                 FAQs
+              </Link>
+            </li>
+            <li className="my-5 lg:m-auto lg:ml-6">
+              <Link
+                to="joinus"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+                className="block text-textColor hover:underline underline-offset-4 font-bold cursor-pointer"
+              >
+                Join us
               </Link>
             </li>
             <li className="my-5 lg:m-auto lg:ml-6">
@@ -112,7 +119,7 @@ function Navbar() {
         </div>
       </div>
     </nav>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar

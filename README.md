@@ -2,7 +2,7 @@
 
 **New website for AlgoManiacZ**
 
-The Design should look like :
+The Design should look like below
 ![Screenshot (5)](https://github.com/AlgoManiacZ/AlgoManiacZ_Revamped/assets/92796050/2840045d-421f-489b-83a3-238eca839842)
 ![Screenshot (11)](https://github.com/AlgoManiacZ/AlgoManiacZ_Revamped/assets/92796050/ac98d618-27a0-4f7c-af78-da6838067aa4)
 ![Screenshot (92)](https://github.com/AlgoManiacZ/AlgoManiacZ_Revamped/assets/92796050/e6f57901-ca24-4487-bc58-963ad9eac279)
@@ -78,6 +78,13 @@ To contribute to the project, follow the steps below:
      npm install
      ```
 
+1. **Run the Project**
+
+   - To run the project locally
+     ```bash
+      npm run dev
+     ```
+
 1. **Maintaining Synchronization**
 
    - Go to your forked resository and click `Sync fork` to stay updated with the actual repository.
@@ -126,4 +133,3 @@ To contribute to the project, follow the steps below:
 1. Click on **`Create Pull Request`**.
 
 1. Voila! You have made a PR to the **AlgoManiacZ** 💥 Wait for your submission to be accepted and your PR to be merged 🎉
-

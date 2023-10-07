@@ -15,3 +15,12 @@ html {
     font-family: 'Poppins', sans-serif;
   }
 }
+
+@layer utilities{
+  @media screen and (max-width: 1023.5px){
+    .custom-bg {
+      background-color: #0E0B10; /* Replace with your desired color code */
+      border-bottom-left-radius: 80%;
+    } 
+  }
+}

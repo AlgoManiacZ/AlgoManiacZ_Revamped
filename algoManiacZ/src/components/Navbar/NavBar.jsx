@@ -51,10 +51,10 @@ function Navbar() {
         <div
           className={`${
             isOpen ? 'block' : 'hidden'
-          }  absolute lg:relative w-full lg:w-auto left-0 top-[120px] lg:top-auto translate-x-1/4 lg:translate-x-0  lg:flex lg:items-center `}
+          }  absolute lg:relative w-8/12 h-80 lg:w-auto right-0 top-[112px] lg:top-auto lg:translate-x-0  lg:flex lg:items-center custom-bg`}
         >
-          <ul className="flex flex-col lg:flex-row w-6/12 lg:w-auto items-center bg-gray-900 rounded-lg">
-            <li className="my-5 lg:m-auto lg:ml-6">
+          <ul className="flex flex-col lg:flex-row w-full lg:w-auto items-center bg-gray-900 rounded-lg">
+            <li className="my-3 lg:m-auto lg:ml-6">
               <Link
                 to="about"
                 spy={true}
@@ -66,7 +66,7 @@ function Navbar() {
                 About us
               </Link>
             </li>
-            <li className="my-5 lg:m-auto lg:ml-6">
+            <li className="my-3 lg:m-auto lg:ml-6">
               <Link
                 to="speakers"
                 spy={true}
@@ -79,7 +79,7 @@ function Navbar() {
               </Link>
             </li>
 
-            <li className="my-5 lg:m-auto lg:ml-6">
+            <li className="my-3 lg:m-auto lg:ml-6">
               <Link
                 to="faq"
                 spy={true}
@@ -91,7 +91,7 @@ function Navbar() {
                 FAQs
               </Link>
             </li>
-            <li className="my-5 lg:m-auto lg:ml-6">
+            <li className="my-3 lg:m-auto lg:ml-6">
               <Link
                 to="joinus"
                 spy={true}
@@ -103,7 +103,7 @@ function Navbar() {
                 Join us
               </Link>
             </li>
-            <li className="my-5 lg:m-auto lg:ml-6">
+            <li className="my-3 lg:m-auto lg:ml-6">
               <Link
                 to="contactus"
                 spy={true}

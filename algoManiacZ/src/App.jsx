@@ -9,13 +9,12 @@ import Home from "./components/Home/Home";
 function App() {
   return (
     <>
-      <Navbar> </Navbar>
+      <Navbar />
       <Home />
-      <HeroSection></HeroSection>
-      <SpeakerSection></SpeakerSection>
+      <HeroSection />
+      <SpeakerSection />
       <Faq />
-      <Contact></Contact>
-
+      <Contact />
       <Footer />
     </>
   );

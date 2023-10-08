@@ -63,7 +63,7 @@ const Contact = () => {
   return (
     <div className="joinus">
       <div
-        className="h-screen pb-10 bg-no-repeat bg-cover bg-center md:bg-left lg:bg-left xl:bg-left text-textColor"
+        className="h-auto pb-10 bg-no-repeat bg-cover bg-center md:bg-left lg:bg-left xl:bg-left text-textColor"
         style={{
           backgroundImage: `url(${contactBackgroundImage})`,
         }}

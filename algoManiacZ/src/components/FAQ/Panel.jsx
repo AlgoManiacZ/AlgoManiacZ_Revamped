@@ -11,6 +11,8 @@ const Panel = ({ title, children, isActive, onShow }) => {
       <div
         className="flex justify-between items-center px-5 gap-x-3"
         onClick={onShow}
+        
+
       >
         <h3 className="md:text-xl text-md font-bold">{title}</h3>
         <BiPlus className="text-3xl"></BiPlus>

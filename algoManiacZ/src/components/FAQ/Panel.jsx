@@ -5,7 +5,7 @@ const Panel = ({ title, children, isActive, onShow }) => {
   return (
     <div
       className={`bg-orange ${
-        isActive ? 'h-fit' : 'h-20'
+        isActive ? 'h-fit' : 'h-30'
       }  rounded-xl py-4 px-3 duration-200 transition-h ease-in-out flex flex-col justify-center`}
     >
       <div

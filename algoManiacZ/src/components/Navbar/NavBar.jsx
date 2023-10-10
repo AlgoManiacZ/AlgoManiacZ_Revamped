@@ -63,6 +63,7 @@ function Navbar() {
                 duration={100}
                 onClick={toggleNavbar}
                 className="block text-textColor hover:underline underline-offset-4 font-bold cursor-pointer"
+                
               >
                 About us
               </Link>
@@ -89,6 +90,7 @@ function Navbar() {
                 offset={-100}
                 onClick={toggleNavbar}
                 duration={100}
+                onClick={toggleNavbar}
                 className="block text-textColor hover:underline underline-offset-4 font-bold cursor-pointer"
               >
                 FAQs
@@ -115,6 +117,7 @@ function Navbar() {
                 onClick={toggleNavbar}
                 offset={-100}
                 duration={100}
+                onClick={toggleNavbar}
                 className="block text-texttext-textColor hover:underline underline-offset-4 font-bold cursor-pointer py-2 px-5 rounded-3xl  bg-gradient-to-r from-Navbar to-NavbarPurple"
               >
                 Contact Us

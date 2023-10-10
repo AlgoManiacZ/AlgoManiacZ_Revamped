@@ -61,7 +61,6 @@ function Navbar() {
                 smooth={true}
                 offset={-100}
                 duration={100}
-                onClick={toggleNavbar}
                 className="block text-textColor hover:underline underline-offset-4 font-bold cursor-pointer"
                 
               >
@@ -75,7 +74,6 @@ function Navbar() {
                 smooth={true}
                 offset={-100}
                 duration={100}
-                onClick={toggleNavbar}
                 className="block text-textColor hover:underline underline-offset-4 font-bold cursor-pointer"
               >
                 Speakers
@@ -88,7 +86,6 @@ function Navbar() {
                 spy={true}
                 smooth={true}
                 offset={-100}
-                onClick={toggleNavbar}
                 duration={100}
                 onClick={toggleNavbar}
                 className="block text-textColor hover:underline underline-offset-4 font-bold cursor-pointer"
@@ -103,7 +100,6 @@ function Navbar() {
                 smooth={true}
                 offset={-100}
                 duration={100}
-                onClick={toggleNavbar}
                 className="block text-textColor hover:underline underline-offset-4 font-bold cursor-pointer"
               >
                 Join us
@@ -114,7 +110,6 @@ function Navbar() {
                 to="contactus"
                 spy={true}
                 smooth={true}
-                onClick={toggleNavbar}
                 offset={-100}
                 duration={100}
                 onClick={toggleNavbar}

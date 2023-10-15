@@ -34,7 +34,7 @@ export default function Footer() {
           <div className="container mx-auto flex justify-center">
             <a href="">
               <BsYoutube
-                className="text-textColor ml-4 mr-4 mb-4 hover:text-hoverTextColor cursor-pointer"
+                className="text-textColor ml-4 mr-4 mb-4 hover:text-hoverTextColor cursor-pointerd"
                 size="2.2rem"
               />
             </a>

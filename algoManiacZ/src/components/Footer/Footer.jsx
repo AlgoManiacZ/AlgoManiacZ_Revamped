@@ -71,7 +71,7 @@ export default function Footer() {
             </a>
             <a
               href=""
-              className="hover:text-original-color transform hover:scale-500 transition duration-300"
+              className="hover:text-original-color transform hover:scale-110 transition duration-300"
             >
               <BsGoogle
                 className="google text-textColor ml-4 mr-4 mb-4 cursor-pointer"

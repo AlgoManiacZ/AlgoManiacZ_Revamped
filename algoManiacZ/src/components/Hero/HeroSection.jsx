@@ -1,7 +1,27 @@
+import { useEffect, useRef } from "react";
 import backgroundImage from "../../assets/backgroundImage.svg";
 import HeroImage from "../../assets/HeroImage.svg";
+import VanillaTilt from "vanilla-tilt";
 
 const HeroSection = () => {
+
+  function Tilt(props) {
+    const { options, ...rest } = props;
+    const tilt = useRef(null);
+
+    useEffect(() => {
+      VanillaTilt.init(tilt.current, options);
+    }, [options]);
+
+    return <div ref={tilt} {...rest} />;
+  }
+
+  const options = {
+    scale: 1.1, 
+    speed: 1000,
+    max: 10,
+  };
+
   return (
     <div className="about">
       <div
@@ -13,11 +33,13 @@ const HeroSection = () => {
         <div className=" mx-auto px-4 py-16 md:py-20 lg:py-24 xl:py-32">
           <div className="flex flex-col items-center justify-around  md:flex-row">
             <div className="w-full md:w-1/2 lg:w-1/3 xl:w-1/3">
+            <Tilt className="box" options={options}>
               <img
                 src={HeroImage}
                 alt=""
                 className="w-full h-auto rounded-lg  md:mt-0"
               />
+            </Tilt>
             </div>
 
             <div className="mt-10 md:mt-0 md:ml-10 md:w-1/2 w-full">

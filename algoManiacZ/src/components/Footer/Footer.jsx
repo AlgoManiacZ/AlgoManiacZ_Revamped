@@ -69,7 +69,7 @@ export default function Footer() {
             <p className="mb-2">Made with ❤️ by AlgoManiacZ Community</p>
           </div>
 
-          <div className="text-center px-2 md:px-28 my-3">
+          <div className="text-center px-2 md:px-28 my-3 ">
             <Link
               to="home"
               spy={true}
@@ -78,7 +78,7 @@ export default function Footer() {
               duration={100}
             >
               <RiArrowUpCircleFill
-                className="mb-2 text-orange hover:text-hoverOrange cursor-pointer"
+                className="mb-2 text-orange hover:text-hoverOrange cursor-pointer scrollToTop"
                 size="2.5rem"
               />
             </Link>

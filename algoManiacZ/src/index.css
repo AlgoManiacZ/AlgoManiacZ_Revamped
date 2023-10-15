@@ -24,3 +24,26 @@ html {
     } 
   }
 }
+
+.scrollToTop {
+  position: fixed;
+  bottom: 6%;
+  right: 2%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.scrollToTop.show {
+  opacity: 1;
+}
+
+.scrollToTop.hide {
+  opacity: 0;
+}
+
+
+@media screen and (max-width:767px) {
+  .scrollToTop > svg {
+    fill: rgb(255, 102, 0);
+  }
+}

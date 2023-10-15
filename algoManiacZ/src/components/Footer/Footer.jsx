@@ -21,12 +21,12 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between text-text mb-6">
           <div className="text-center flex-1 my-3">
             <h3 className="text-3xl font-bold mb-1">Akshat Chaube</h3>
-            <p className="mb-2">+91 8826061898</p>
+            <p className="mb-2">akshatchaube22@gmail.com</p>
           </div>
 
           <div className="text-center flex-1 my-3">
-            <h3 className="text-3xl font-bold mb-1">Himank Gupta</h3>
-            <p className="mb-2">+91 9871262192</p>
+            <h3 className="text-3xl font-bold mb-1">Karthik Nadar</h3>
+            <p className="mb-2">karthiknadar1204@gmail.com</p>
           </div>
         </div>
 

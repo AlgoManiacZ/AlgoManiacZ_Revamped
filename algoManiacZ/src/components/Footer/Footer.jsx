@@ -34,31 +34,31 @@ export default function Footer() {
           <div className="container mx-auto flex justify-center">
             <a href="">
               <BsYoutube
-                className="text-textColor ml-4 mr-4 mb-4 hover:text-hoverTextColor cursor-pointerd"
+                className="text-textColor ml-4 mr-4 mb-4 transition-all ease-in-out hover:text-[#CD201F] hover:scale-110 cursor-pointer"
                 size="2.2rem"
               />
             </a>
             <a href="">
               <BsInstagram
-                className="text-textColor ml-4 mr-4 mb-4 hover:text-hoverTextColor cursor-pointer"
+                className="text-textColor ml-4 mr-4 mb-4 transition-all ease-in-out hover:text-[#E1306C] hover:scale-110 cursor-pointer"
                 size="2rem"
               />
             </a>
             <a href="">
               <BsLinkedin
-                className="text-textColor ml-4 mr-4 mb-4 hover:text-hoverTextColor cursor-pointer"
+                className="text-textColor ml-4 mr-4 mb-4 transition-all ease-in-out hover:text-[#0077b5] hover:scale-110 cursor-pointer"
                 size="2rem"
               />
             </a>
             <a href="">
               <BsGithub
-                className="text-textColor ml-4 mr-4 mb-4 hover:text-hoverTextColor cursor-pointer"
+                className="text-textColor ml-4 mr-4 mb-4 transition-all ease-in-out hover:text-hoverTextColor hover:scale-110 cursor-pointer"
                 size="2rem"
               />
             </a>
             <a href="">
               <BsGoogle
-                className="text-textColor ml-4 mr-4 mb-4 hover:text-hoverTextColor cursor-pointer"
+                className="text-textColor ml-4 mr-4 mb-4 transition-all ease-in-out hover:text-[#FBBC05] hover:scale-110 cursor-pointer"
                 size="2rem"
               />
             </a>

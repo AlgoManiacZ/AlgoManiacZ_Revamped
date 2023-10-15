@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import "./footer.css";
 
 import {
   BsGoogle,
@@ -21,55 +22,71 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between text-text mb-6">
           <div className="text-center flex-1 my-3">
             <h3 className="text-3xl font-bold mb-1">Akshat Chaube</h3>
-            <p className="mb-2">akshatchaube22@gmail.com</p>
+            <p className="mb-2">+91 8826061898</p>
           </div>
 
           <div className="text-center flex-1 my-3">
-            <h3 className="text-3xl font-bold mb-1">Karthik Nadar</h3>
-            <p className="mb-2">karthiknadar1204@gmail.com</p>
+            <h3 className="text-3xl font-bold mb-1">Himank Gupta</h3>
+            <p className="mb-2">+91 9871262192</p>
           </div>
         </div>
 
         <div className="text-center">
           <div className="container mx-auto flex justify-center">
-            <a href="">
+            <a
+              href=""
+              className=" hover:text-original-color transform hover:scale-110 transition duration-300"
+            >
               <BsYoutube
-                className="text-textColor ml-4 mr-4 mb-4 hover:text-hoverTextColor cursor-pointer"
-                size="2.2rem"
+                className=" youtube text-textColor ml-4 mr-4 mb-4 cursor-pointer"
+                size="2.3rem"
               />
             </a>
-            <a href="">
+            <a
+              href=""
+              className=" hover:text-original-color transform hover:scale-110 transition duration-300"
+            >
               <BsInstagram
-                className="text-textColor ml-4 mr-4 mb-4 hover:text-hoverTextColor cursor-pointer"
+                className=" instagram text-textColor ml-4 mr-4 mb-4 cursor-pointer"
                 size="2rem"
               />
             </a>
-            <a href="">
+            <a
+              href=""
+              className="hover:text-original-color transform hover:scale-110 transition duration-300"
+            >
               <BsLinkedin
-                className="text-textColor ml-4 mr-4 mb-4 hover:text-hoverTextColor cursor-pointer"
+                className="linkedin text-textColor ml-4 mr-4 mb-4 cursor-pointer"
                 size="2rem"
               />
             </a>
-            <a href="">
+            <a
+              href=""
+              className="hover:text-original-color transform hover:scale-110 transition duration-300"
+            >
               <BsGithub
-                className="text-textColor ml-4 mr-4 mb-4 hover:text-hoverTextColor cursor-pointer"
+                className="github text-textColor ml-4 mr-4 mb-4 cursor-pointer"
                 size="2rem"
               />
             </a>
-            <a href="">
+            <a
+              href=""
+              className="hover:text-original-color transform hover:scale-500 transition duration-300"
+            >
               <BsGoogle
-                className="text-textColor ml-4 mr-4 mb-4 hover:text-hoverTextColor cursor-pointer"
+                className="google text-textColor ml-4 mr-4 mb-4 cursor-pointer"
                 size="2rem"
               />
             </a>
           </div>
         </div>
+
         <div className="flex flex-col md:flex-row items-center justify-between text-textColor mb-6">
           <div className="text-center px-2 md:px-28 my-3">
             <p className="mb-2">Made with ❤️ by AlgoManiacZ Community</p>
           </div>
 
-          <div className="text-center px-2 md:px-28 my-3 ">
+          <div className="text-center px-2 md:px-28 my-3">
             <Link
               to="home"
               spy={true}
@@ -78,7 +95,7 @@ export default function Footer() {
               duration={100}
             >
               <RiArrowUpCircleFill
-                className="mb-2 text-orange hover:text-hoverOrange cursor-pointer scrollToTop"
+                className="mb-2 text-orange hover:text-hoverOrange cursor-pointer"
                 size="2.5rem"
               />
             </Link>

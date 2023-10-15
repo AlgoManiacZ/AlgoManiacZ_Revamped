@@ -1,0 +1,37 @@
+.instagram:hover {
+  color: rgb(223, 216, 216);
+  border-radius: 25%;
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d,
+    #f56040,
+    #f77737,
+    #fcaf45,
+    #ffdc80
+  );
+}
+
+.youtube:hover {
+  color: red;
+}
+
+.linkedin:hover {
+  color: #00a0dc;
+  background: whitesmoke;
+  border-radius: 10%;
+}
+
+.github:hover {
+  color: black;
+  background: white;
+  border-radius: 50%;
+}
+
+.google:hover {
+  color: #db4437;
+}

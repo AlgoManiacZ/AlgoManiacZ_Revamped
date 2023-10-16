@@ -14,7 +14,7 @@ export default function Footer() {
   return (
     <div className="contactus">
       <footer className="py-4 text-textColor bg-backgroundBody h-auto pb-5">
-        <h1 className="text-4xl text-center font-bold mt-10 mb-6">
+        <h1 className="text-4xl text-center font-bold mt-10 mb-6">        
           Contact Us
         </h1>
 

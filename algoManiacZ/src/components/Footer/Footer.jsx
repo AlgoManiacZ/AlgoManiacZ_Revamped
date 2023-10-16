@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-scroll";
 
 import {
@@ -10,7 +9,7 @@ import {
 } from "react-icons/bs";
 import { RiArrowUpCircleFill } from "react-icons/ri";
 
-export default function Footer() {
+export default function Footer() {             
   return (
     <div className="contactus">
       <footer className="py-4 text-textColor bg-backgroundBody h-auto pb-5">

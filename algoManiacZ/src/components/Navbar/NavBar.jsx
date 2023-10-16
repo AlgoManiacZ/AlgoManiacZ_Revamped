@@ -16,7 +16,7 @@ function Navbar() {
           spy={true}
           smooth={true}
           offset={-100}
-          duration={100}
+          duration={100}        
         >
           <img
             src={logo}

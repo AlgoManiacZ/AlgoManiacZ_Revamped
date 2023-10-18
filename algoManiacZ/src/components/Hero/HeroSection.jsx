@@ -24,7 +24,7 @@ const HeroSection = () => {
   return (
     <div className="about">
       <div
-        className="md:h-[calc(100vh-112px)] pb-10 bg-no-repeat bg-cover bg-center md:bg-left lg:bg-left xl:bg-left text-text"
+        className="md:h-[calc(100vh-112px)] pb-10 bg-no-repeat bg-cover bg-center md:bg-left lg:bg-left xl:bg-left text-textColor"
         style={{
           backgroundImage: `url(${backgroundImage})`,
         }}
